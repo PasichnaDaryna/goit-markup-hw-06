@@ -71,40 +71,91 @@
                   эффективные решения <br />
                   для вашего бизнеса
                 </h1>
-                <a class="order-button" href="./modal.html">Заказать услугу</a></div>
+                <button class="order-button" data-open-modal>Заказать услугу</button>
+                        
+              </div>
+
+              <!-- Modalka -->
+              <div class="backdrop is-hidden" data-backdrop>
+              <div class="modal">
+               
+              <form action class="form">    
+               <b class="disclaimer">Оставьте свои данные, мы вам перезвоним!</b>
+                 
+                             
+                      <!-- поле Формы -->
+                  <div class="form-field">
+                    
+                    <input class="field" type="text" id="name">
+                    <label class="form-label" for="name">Имя</label>
+                      <svg class="icohead" width="12" height="12">
+                        <use  href="./img/symbol-defs.svg#icon-iconhead" ></use>
+                      </svg>
+                  </div>
+
+                    <!-- поле Формы -->  
+
+                      <div class="form-field"> 
+                        <input class="field" type="tel" name="telephone" />
+                        <label class="form-label">Телефон</label>                       
+                          <svg class="icohead" width="13" height="13">
+                            <use  href="./img/symbol-defs.svg#icon-iconcall"></use>
+                          </svg>
+                       </div>
+                      <div class="form-field">
+                       <input class="field" type="email" name="email" />
+                          <label class="form-label">
+                            Почта
+                          </label>                          
+                            <svg class="icohead" width="15" height="12">
+                              <use  href="./img/symbol-defs.svg#icon-iconmail "></use>
+                            </svg> 
+                           
+                          </div>
+                        <div>
+                        
+                          <textarea
+                            class="comment"
+                            name="comment"
+                            id="comment"
+                            rows="8"
+                            placeholder="Комментарий"
+                          ></textarea>
+                        </div>
+  
+                        <div class="form-agreement">
+                          <label for="agreement">
+                            <input class="checkbox" type="checkbox" name="agreement" id="agreement">
+                            <svg class="checkbox-icon" width="15" height="15">
+                              <use href=""></use>
+                            </svg>
+                           <span class="iagree"> Согласен с рассылкой и принимаю&nbsp;<a class="terms-link" href=""> Условия договора</a></span>
+                          </label>
+                        </div>
+               
+                     
+                
+              <button class="send-form" type="submit">Отправить</button>
+
+              <button class="close-button" data-close-modal>
+
+                <svg class="close-icon" width="11" height="11">
+                  <use  href="./img/symbol-defs.svg#icon-close"></use>
+                </svg>
+             </button>
+              
+            </form>
+             
+            </div>
+            
+            </div>
+            <!-- modalka end -->
                 
                 
               </section>
 
 
-              <!-- modalka -->
-              <div class="backdrop is-hidden">
-                <div class="modal">
-                <b>Оставьте свои данные, мы вам перезвоним!</b>
-                <form action="">
-                  <label for="name">Имя</label>
-                  <input type="text" id="name">
-                  <label>
-                    Телефон
-                    <input type="tel" name="telephone" />
-                  </label>
-                
-                  <label>
-                    Почта
-                    <input type="email" name="email" />
-                  </label>
-                  <textarea
-                  name="comment"
-                  rows="5"
-                  cols="45"
-                  placeholder="Оставьте комментарий"
-                ></textarea>
-
-
-                </form>
-
-                </div>
-              </div>
+              
             
       <!-- central  -->
       
@@ -502,6 +553,11 @@
  
 </footer>
         
-<script src="./js/modal.js"></script> 
+<script src="./js/modal.js">
+
+
+
+    
+</script>
 </body>
 </html>
