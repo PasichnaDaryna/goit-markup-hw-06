@@ -515,11 +515,11 @@ margin-bottom: 30px;
 }
 
 .field:focus-within + .comment-label {
-  transform: translate(0px, -18px);
+  transform: translateY(-18px);
   color: var(--hover-focus-color);
 } 
 .field:not(:placeholder-shown) + .comment-label {
-  transform: translate(-21px, -18px);
+  transform: translateY(-18px);
   color: var(--hover-focus-color);}
 
 .field:focus-within ~ .icohead {
@@ -537,10 +537,12 @@ margin-bottom: 30px;
  
  
 .form-agreement {
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
-  margin-left: 13px;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  text-align: center;
+ 
+  
   
   
 }
